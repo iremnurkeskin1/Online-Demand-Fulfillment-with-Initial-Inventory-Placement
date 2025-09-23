@@ -11,7 +11,7 @@ Supporting files (e.g., `amazon_china_data.py`) provide input data and coefficie
 
 ## <span style="color:blue">  Requirements </span>
 
-The experiments in this repository were run with the following setup:
+The experiments in this repository were run with the following dependencies:
 
 - **Python**: 3.11.13  
 - **NumPy**: 2.3.2  
@@ -19,16 +19,22 @@ The experiments in this repository were run with the following setup:
 - **Gurobi**: 12.0.3 (with valid license)  
 - **geopy**: only needed for the `Amazon_China` example
 
-Install typical dependencies:
+
+To install the required dependencies, run the following command:
 ```bash
-pip install numpy matplotlib geopy
-# Gurobi must be installed separately and licensed:
-# pip install gurobipy
+pip install -r requirements.txt
 ```
 
+Alternatively, you can install each dependency separately. For example, to install numpy, you may type
+```bash
+pip install numpy==2.3.2
 
+Note on Gurobi: the code uses Gurobi as the optimization solver for the experiments. To run those parts you must install the Gurobi Python package and have a valid Gurobi license configured on your machine. See Gurobi's academic license page and installation instructions:
 
-> **Gurobi licensing:** set `GRB_LICENSE_FILE`.
+- Gurobi academic licenses: https://www.gurobi.com/academia/academic-program-and-licenses/
+- Gurobi installation & Python interface: https://www.gurobi.com/documentation/
+```
+
 
 
 ## <span style="color:blue"> How to Run </span>
